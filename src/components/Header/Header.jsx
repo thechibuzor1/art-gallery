@@ -12,7 +12,7 @@ const Header = () => {
         </h1>
         <h5 className="text-light">I'm going to blow your mind.</h5>
         <h2>
-          Updated album available here:{" "}
+          Updated album available here:
           <a
             href="https://photos.google.com/share/AF1QipPySAB1mGBpIB970-JjSav4zrvhxes93CnBVDeDEcJCEdW5cBEq7X-yGv-OYGoOaw?key=aWhWcmxQcm0zQnRkTWtQTnFRTjJ1VmVnN1RuODNn"
             target="_blank"

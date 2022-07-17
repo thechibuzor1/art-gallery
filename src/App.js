@@ -1,17 +1,29 @@
 import React from "react";
-import Explore from "./components/Explore/Explore";
-import Featured from "./components/Featured/Featured";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-
+import Characters from "./screens/characters";
+import Creepy from "./screens/creepy";
+import Darktimes from "./screens/darktimes";
+import Faces from "./screens/faces";
+import Home from "./screens/Home";
+import Masterpiece from "./screens/masterpiece";
+import Tati from "./screens/tati";
+import Weirdshit from "./screens/Weirdshit";
 function App() {
   return (
-    <>
-      <Header />
-      <Featured />
-      <Explore />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/characters" element={<Characters />} />
+        <Route path="/creepy" element={<Creepy />} />
+        <Route path="/darktimes" element={<Darktimes/>} />
+        <Route path="/faces" element={<Faces />} />
+        <Route path="/tati" element={<Tati />} />
+        <Route path="/masterpieces" element={<Masterpiece />} />
+        <Route path="/weirdshit" element={<Weirdshit />} />
+      </Routes>
+      <Footer/>
+    </Router>
   );
 }
 

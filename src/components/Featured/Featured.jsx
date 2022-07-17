@@ -1,8 +1,13 @@
 import React from "react";
 import "./Featured.css";
-import img1 from "../../assests/Porto/89.jpg";
-import img2 from "../../assests/Porto/90.jpg";
-import img3 from "../../assests/Porto/91.jpg";
+import img1 from "../../assests/Porto/characters/7.jpg";
+import img2 from "../../assests/Porto/creepy/26.jpg";
+import img3 from "../../assests/Porto/darkdays/3.jpg";
+import img4 from "../../assests/Porto/faces/11.jpg";
+import img5 from "../../assests/Porto/masterpiece/10.jpg";
+import img6 from "../../assests/Porto/tati/5.jpg";
+import img7 from "../../assests/Porto/weird/12.jpg";
+
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper";
@@ -26,6 +31,22 @@ const data = [
     id: 3,
     imgSrc: img3,
   },
+  {
+    id: 4,
+    imgSrc: img4,
+  },
+  {
+    id: 5,
+    imgSrc: img5,
+  },
+  {
+    id: 6,
+    imgSrc: img6,
+  },
+  {
+    id: 7,
+    imgSrc: img7,
+  },
 ];
 
 const Featured = () => {
@@ -36,7 +57,7 @@ const Featured = () => {
         modules={[Navigation, Pagination, Autoplay]}
         slidesPerView={1}
         spaceBetween={50}
-        autoplay={{ delay: 2000 }}
+        autoplay={{ delay: 3000 }}
         effect='fade'
       >
         {data.map((item, index) => {
